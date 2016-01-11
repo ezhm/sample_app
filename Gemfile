@@ -1,17 +1,26 @@
 source 'https://ruby.taobao.org'
-
 ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
+  gem 'guard-rspec',require: false#'4.6.0'
+#  gem 'guard-rspec',github:'guard/guard/rspec'
 end
 
 group :test do
   gem 'selenium-webdriver'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '2.2.0'
+  gem 'libnotify','0.8.0'
+  gem 'rspec'
+#  gem 'spork-rails' ,github:'manafire/spork' #'railstutorial/spork-rails'
+  gem 'spork' ,github:'sporkrb/spork' #'railstutorial/spork-rails'
+  gem 'guard-spork',:github=>'guard/guard-spork'
+  gem 'childprocess','0.3.6'
+#  gem 'rspec-rails','3.3.2'
+#  gem 'webrat','0.7.1'
 end
 
 # Use sqlite3 as the database for Active Record
