@@ -23,6 +23,7 @@ group :test do
   gem 'spork' ,github:'sporkrb/spork' #'railstutorial/spork-rails'
   gem 'guard-spork',:github=>'guard/guard-spork'
   gem 'childprocess','0.3.6'
+  gem 'factory_girl_rails','4.2.1'
 #  gem 'rspec-rails','3.3.2'
 #  gem 'webrat','0.7.1'
 end
